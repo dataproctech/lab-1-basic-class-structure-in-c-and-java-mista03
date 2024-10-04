@@ -14,7 +14,7 @@ class Parrot{
             i = 0;
         }
     
-        void remeberPhrase(std::string phrase){
+        void rememberPhrase(std::string phrase){
             phrases.push_back(phrase);
         }
         
@@ -38,7 +38,7 @@ int main()
     parrot1.say();
     parrot1.changePhrase(0, "hello");
     parrot1.say();
-    parrot1.remeberPhrase("pryvit");
+    parrot1.rememberPhrase("pryvit");
     parrot1.say();
     parrot1.say();
 
