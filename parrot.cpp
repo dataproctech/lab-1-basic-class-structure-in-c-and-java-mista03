@@ -9,8 +9,8 @@ class Parrot{
         int i;
         
     public:
-        Parrot(){
-            phrases.push_back("czesc");
+        Parrot(std::string phrase){
+            phrases.push_back(phrase);
             i = 0;
         }
     
@@ -33,7 +33,7 @@ int main()
 {
     std::srand(time(NULL));
     
-    Parrot parrot1;
+    Parrot parrot1("czesc");
     parrot1.say();
     parrot1.say();
     parrot1.changePhrase(0, "hello");
